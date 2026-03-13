@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kahve Falı - Gizlilik Politikası</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #080513;
+            --bg-card: rgba(18, 13, 35, 0.75);
+            --border: rgba(255, 255, 255, 0.08);
+            --text: #f4f0ff;
+            --muted: #c7c0df;
+            --accent: #f6b756;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont;
+            background: radial-gradient(circle at top, rgba(247, 197, 134, 0.15), transparent 55%), var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            line-height: 1.7;
+        }
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 48px 20px 80px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            margin-bottom: 12px;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+        .meta {
+            margin-top: 14px;
+            font-size: 0.95rem;
+            color: var(--muted);
+        }
+        section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 28px;
+            margin-bottom: 22px;
+            backdrop-filter: blur(8px);
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            margin-bottom: 14px;
+            color: var(--accent);
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <header>
+            <h1>Kahve Falı Gizlilik Politikası</h1>
+            <p>Kullanıcılarımızın kişisel verilerini şeffaf ve güvenli biçimde işlemek en öncelikli prensibimizdir.</p>
+            <div class="meta">Son güncelleme: 13 Mart 2026</div>
+        </header>
+
+        <section>
+            <h2>1. Kimler için geçerli?</h2>
+            <p>Bu metin, Kahve Falı mobil uygulaması ile admin panelini kullanan tüm ziyaretçi ve kayıtlı kullanıcılar için geçerlidir. Uygulamayı kullanarak bu politikadaki şartları kabul etmiş olursunuz.</p>
+        </section>
+
+        <section>
+            <h2>2. Topladığımız veriler</h2>
+            <ul>
+                <li><strong>Hesap bilgileri:</strong> İsim, e-posta, doğum yılı, burç, profil tercihleri.</li>
+                <li><strong>Fal içerikleri:</strong> Yüklediğiniz fincan fotoğrafları, sorular, yorum metinleri, AI üretim geçmişi.</li>
+                <li><strong>Cihaz & bildirim verileri:</strong> Expo/FCM push token’ı, işletim sistemi, uygulama sürümü, izin durumları.</li>
+                <li><strong>Ödeme/ödül kayıtları:</strong> Reklamdan kazanılan haklar, kampanyalar, kullanım sayıları.</li>
+                <li><strong>Destek iletişimi:</strong> Bize gönderdiğiniz e-postalar, hata raporları.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Verileri hangi amaçla kullanıyoruz?</h2>
+            <ul>
+                <li>Fal yorumlarını üretmek (geleneksel metin havuzu veya seçtiğiniz AI sağlayıcısı üzerinden).</li>
+                <li>Hesabınızı yönetmek, giriş yapmak ve kota/hak bilgilerini güncellemek.</li>
+                <li>Bildirim izniniz varsa size hatırlatma veya kampanya mesajları göndermek.</li>
+                <li>Performans, hata ve güvenlik kayıtlarını takip ederek ürünü iyileştirmek.</li>
+                <li>Yasal yükümlülükleri yerine getirmek ve dolandırıcılık girişimlerini önlemek.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Saklama ve güvenlik</h2>
+            <p>Tüm verilerimiz Türkiye veya AB’de barındırılan sunucularda tutulur. Hassas bilgiler (örneğin AI sağlayıcı API anahtarları) AES-256-GCM ile şifrelenir. Gerektiğinde erişimi kayıt altına alır, minimum yetki prensibi uygularız. Hesabınızı sildiğinizde kişisel verileriniz makul süre içinde anonimleştirilir veya tamamen silinir.</p>
+        </section>
+
+        <section>
+            <h2>5. Üçüncü taraf servisler</h2>
+            <ul>
+                <li><strong>Firebase & Expo</strong> – Kimlik doğrulama, bildirim dağıtımı, dosya depolama.</li>
+                <li><strong>AI sağlayıcıları</strong> – Groq, Google Gemini, Deepseek; yalnızca fal metni üretmek için soru metni ve kullanıcı adı gönderilir.</li>
+                <li><strong>Analitik / hata izleme</strong> – Uygulama hatalarını anlamak için anonim kullanım verileri.</li>
+            </ul>
+            <p>Bu servisler sadece sunulan hizmetin çalışması için gerekli sınırlı verileri işler ve kendi gizlilik politikalarına tabidir.</p>
+        </section>
+
+        <section>
+            <h2>6. Çocukların gizliliği</h2>
+            <p>Uygulamamız 13 yaş altındaki bireylere yönelik değildir. Böyle bir kullanım tespit edilirse hesap derhal silinir.</p>
+        </section>
+
+        <section>
+            <h2>7. Haklarınız</h2>
+            <p>KVKK ve GDPR kapsamındaki haklarınıza saygı duyuyoruz. Bu haklar arasında verilere erişim, düzeltme, taşınabilirlik, işlemeyi kısıtlama veya silme talepleri bulunur. Talebinizi bize ilettiğinizde en geç 30 gün içinde yanıt veririz.</p>
+        </section>
+
+        <section>
+            <h2>8. İletişim</h2>
+            <p>Gizlilikle ilgili tüm sorular için <a href="mailto:destek@kahvefali.app">destek@kahvefali.app</a> adresine veya admin panelindeki destek formuna ulaşabilirsiniz.</p>
+        </section>
+
+        <footer>
+            Kahve Falı © 2026 — Tüm hakları saklıdır.
+        </footer>
+    </main>
+</body>
+</html>
